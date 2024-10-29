@@ -75,8 +75,10 @@ nav {
     flex-direction: column; /* Change to column for hamburger */
     width: 100%;
     background-color: #f8f9fa; /* New background color for mobile */
-    padding: 10px; /* Added padding */
+    padding: 15px; /* Increased padding for better spacing */
+    border: 1px solid #3498db; /* Added border */
     border-radius: 5px; /* Rounded corners */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Added shadow for depth */
 }
 
 .nav-grid {
@@ -88,19 +90,21 @@ nav {
 }
 
 .nav-grid li {
-    margin-bottom: 10px; /* Space between items */
+    margin-bottom: 15px; /* Increased space between items */
 }
 
 .nav-grid li a {
     text-decoration: none;
     color: #333;
-    font-weight: 500;
-    transition: color 0.3s ease;
-    padding: 10px; /* Added padding for better click area */
+    font-weight: 600; /* Increased font weight for emphasis */
+    transition: color 0.3s ease, background-color 0.3s ease; /* Added background color transition */
+    padding: 12px 15px; /* Adjusted padding for better click area */
+    border-radius: 3px; /* Rounded corners for links */
 }
 
 .nav-grid li a:hover {
-    color: #007bff;
+    color: #fff; /* Change text color on hover */
+    background-color: #3498db; /* Background color on hover */
 }
 
 /* Hamburger menu styles */
@@ -118,9 +122,14 @@ nav {
     transition: 0.4s;
 }
 
+.hamburger:hover div {
+    background-color: #3498db; /* New color on hover */
+}
+
+
 /* Active state for hamburger */
 .hamburger.active div:nth-child(1) {
-    transform: rotate(-45deg) translate(-5px, 6px);
+    transform: rotate(-45deg) translate(-6px, 10px);
 }
 
 .hamburger.active div:nth-child(2) {
@@ -128,7 +137,7 @@ nav {
 }
 
 .hamburger.active div:nth-child(3) {
-    transform: rotate(45deg) translate(-5px, -6px);
+    transform: rotate(45deg) translate(-5px, -10px);
 }
 
 /* Show navbar when active */
@@ -168,6 +177,11 @@ nav.active {
     nav {
         flex-direction: column;
         width: 100%;
+        background-color: #f8f9fa; /* New background color for mobile */
+        padding: 15px; /* Increased padding for better spacing */
+        border: 1px solid #3498db; /* Added border */
+        border-radius: 5px; /* Rounded corners */
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Added shadow for depth */
         display: none; /* Hide nav by default */
     }
 
@@ -177,25 +191,36 @@ nav.active {
     }
 
     .nav-grid li {
+        margin-bottom: 15px; /* Increased space between items */
+    }
+
+    section {
+        padding: 15px;
+    }
+
+    h1 {
+        font-size: 2em;
+    }
+
+    h2 {
+        font-size: 1.5em;
+    }
+
+    h3 {
+        font-size: 1.2em;
+    }
+
+    h4 {
+        font-size: 1em;
+    }
+
+    .project-content {
+        flex-direction: column;
+    }
+
+    .company-logo {
+        max-width: 80px;
         margin-bottom: 10px;
-    }
-
-    .nav-grid li:not(:last-child)::after {
-        content: none; /* Remove separator for mobile */
-    }
-
-    .welcome-content {
-        flex-direction: column; 
-        align-items: flex-start; 
-    }
-
-    .welcome-image {
-        max-width: 100%; 
-        margin: 10px 0; 
-    }
-
-    .hamburger {
-        display: flex; /* Show hamburger icon */
     }
 }
 
@@ -233,6 +258,12 @@ video {
     height: auto;
 }
 
+.video-container {
+    display: flex; /* Use flexbox */
+    justify-content: center; /* Center horizontally */
+    margin: 20px 0; /* Add some margin for spacing */
+}
+
 /* Button styles */
 .button-container {
     display: flex;
@@ -252,6 +283,7 @@ video {
 
 .button:hover {
     background-color: #2980b9;
+    transform: scale(1.1); /* Scale up on hover */
 }
 
 .animate-click:active {
@@ -308,8 +340,10 @@ video {
         flex-direction: column;
         width: 100%;
         background-color: #f8f9fa; /* New background color for mobile */
-        padding: 10px; /* Added padding */
+        padding: 15px; /* Increased padding for better spacing */
+        border: 1px solid #3498db; /* Added border */
         border-radius: 5px; /* Rounded corners */
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Added shadow for depth */
         display: none; /* Hide nav by default */
     }
 
@@ -319,7 +353,7 @@ video {
     }
 
     .nav-grid li {
-        margin-bottom: 10px;
+        margin-bottom: 15px; /* Increased space between items */
     }
 
     section {
