@@ -18,10 +18,10 @@ header {
     top: 0;
     left: 0;
     right: 0;
-    background-color: rgba(255, 255, 255, 0.8);
+    background: linear-gradient(to right, rgba(255, 255, 255, 0.8), rgba(200, 200, 200, 0.8)); /* Gradient background */
     backdrop-filter: blur(10px);
     -webkit-backdrop-filter: blur(10px);
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2); /* Slightly deeper shadow */
     z-index: 1000;
     transition: background-color 0.3s ease;
 }
@@ -38,7 +38,12 @@ header {
 header h1 {
     margin: 20px;
     font-size: 24px;
-    color: #333;
+    color: #2c3e50; /* Darker color for better contrast */
+    transition: color 0.3s ease; /* Transition for color change */
+}
+
+header h1:hover {
+    color: #3498db; /* Change color on hover */
 }
 
 /* Header styles for h1, h2, h3, h4 */
@@ -70,16 +75,32 @@ h4 {
     margin-top: 15px;
 }
 
+.separator {
+    height: 1px; 
+    max-height: 0.1px;
+    background-color: #3498db; 
+    margin: 20px 10%;
+    width: 80%;
+} 
+
 /* Nav styles */
 nav {
-    display: none; /* Hide nav by default */
+    display: flex; /* Change to flex to allow for transition */
     flex-direction: column; /* Change to column for hamburger */
     width: 100%;
-    background-color: #f8f9fa; /* New background color for mobile */
-    padding: 15px; /* Increased padding for better spacing */
-    border: 1px solid #3498db; /* Added border */
+    background: linear-gradient(to right, #f8f9fa, #e0e0e0); /* Gradient background */
+    padding: 0; /* Start with no padding */
     border-radius: 5px; /* Rounded corners */
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Added shadow for depth */
+    max-height: 0; /* Start with max-height of 0 */
+    overflow: hidden; /* Hide overflow */
+    transition: max-height 0.5s ease, padding 0.5s ease; /* Transition for opening/closing */
+}
+
+nav.active {
+    border: 1px solid #3498db; /* Added border */
+    max-height: 500px; /* Set a max-height for the open state */
+    padding: 15px; /* Ensure padding is applied when open */
 }
 
 .nav-grid {
