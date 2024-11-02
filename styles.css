@@ -7,9 +7,22 @@ body {
     margin: 0 auto;
     padding: 20px;
     padding-top: 150px;
-    background: linear-gradient(to bottom right, #e6f3ff, #7590aa);
+    background:  url('images/background.png');
+    background-size: cover; /* Cover the entire area */
+    background-repeat: no-repeat; /* Prevent repeating */
+    animation: scroll 80s linear infinite; /* Adjust the duration for speed */
+    z-index: -1; /* Ensure it stays behind other content */
     background-attachment: fixed;
     min-height: 100vh;
+}
+
+@keyframes scroll {
+    0% {
+        background-position: 0 0; /* Start position */
+    }
+    100% {
+        background-position: 0 100%; /* End position */
+    }
 }
 
 /* Header styles */
@@ -18,7 +31,7 @@ header {
     top: 0;
     left: 0;
     right: 0;
-    background: linear-gradient(to right, rgba(255, 255, 255, 0.8), rgba(200, 200, 200, 0.8)); /* Gradient background */
+    background: linear-gradient(to right, rgba(255, 255, 255, 0.1), rgba(200, 200, 200, 0.1)); /* Gradient background */
     backdrop-filter: blur(10px);
     -webkit-backdrop-filter: blur(10px);
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2); /* Slightly deeper shadow */
@@ -38,7 +51,8 @@ header {
 header h1 {
     margin: 20px;
     font-size: 24px;
-    color: #2c3e50; /* Darker color for better contrast */
+    color: #464646; /* Darker color for better contrast */
+    text-shadow: 2px 2px 2px #fff; /* White outline for text */
     transition: color 0.3s ease; /* Transition for color change */
 }
 
@@ -142,6 +156,7 @@ nav.active {
     background-color: #333;
     margin: 4px 0;
     transition: 0.4s;
+    box-shadow: 2px 2px 2px #fff; /* Added white shadow */
 }
 
 .hamburger:hover div {
