@@ -8,20 +8,20 @@ body {
     padding: 20px;
     padding-top: 150px;
     background:  url('images/background.png');
-    background-size: cover; /* Cover the entire area */
-    background-repeat: no-repeat; /* Prevent repeating */
-    animation: scroll 80s linear infinite; /* Adjust the duration for speed */
-    z-index: -1; /* Ensure it stays behind other content */
+    background-size: cover; 
+    background-repeat: no-repeat; 
+    animation: scroll 80s linear infinite; 
+    z-index: -1; 
     background-attachment: fixed;
     min-height: 100vh;
 }
 
 @keyframes scroll {
     0% {
-        background-position: 0 0; /* Start position */
+        background-position: 0 0;
     }
     100% {
-        background-position: 0 100%; /* End position */
+        background-position: 0 100%; 
     }
 }
 
@@ -31,10 +31,10 @@ header {
     top: 0;
     left: 0;
     right: 0;
-    background: linear-gradient(to right, rgba(255, 255, 255, 0.1), rgba(200, 200, 200, 0.1)); /* Gradient background */
+    background: linear-gradient(to right, rgba(255, 255, 255, 0.1), rgba(200, 200, 200, 0.1)); 
     backdrop-filter: blur(10px);
     -webkit-backdrop-filter: blur(10px);
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2); /* Slightly deeper shadow */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2); 
     z-index: 1000;
     transition: background-color 0.3s ease;
 }
@@ -51,13 +51,13 @@ header {
 header h1 {
     margin: 20px;
     font-size: 24px;
-    color: #464646; /* Darker color for better contrast */
-    text-shadow: 2px 2px 2px #fff; /* White outline for text */
-    transition: color 0.3s ease; /* Transition for color change */
+    color: #464646; 
+    text-shadow: 2px 2px 2px #fff; 
+    transition: color 0.3s ease; 
 }
 
 header h1:hover {
-    color: #3498db; /* Change color on hover */
+    color: #3498db; 
 }
 
 /* Header styles for h1, h2, h3, h4 */
@@ -99,53 +99,53 @@ h4 {
 
 /* Nav styles */
 nav {
-    display: flex; /* Change to flex to allow for transition */
-    flex-direction: column; /* Change to column for hamburger */
+    display: flex;
+    flex-direction: column;
     width: 100%;
-    background: linear-gradient(to right, #f8f9fa, #e0e0e0); /* Gradient background */
-    padding: 0; /* Start with no padding */
-    border-radius: 5px; /* Rounded corners */
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Added shadow for depth */
-    max-height: 0; /* Start with max-height of 0 */
-    overflow: hidden; /* Hide overflow */
-    transition: max-height 0.5s ease, padding 0.5s ease; /* Transition for opening/closing */
+    background: linear-gradient(to right, rgba(255, 255, 255, 0.1), rgba(200, 200, 200, 0.1));
+    padding: 0; 
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); 
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.5s ease, padding 0.5s ease; 
 }
 
 nav.active {
-    border: 1px solid #3498db; /* Added border */
-    max-height: 500px; /* Set a max-height for the open state */
-    padding: 15px; /* Ensure padding is applied when open */
+    border: 1px solid #3498db; 
+    max-height: 500px; 
+    padding: 15px; 
 }
 
 .nav-grid {
     display: flex;
-    flex-direction: column; /* Stack items vertically */
+    flex-direction: column; 
     padding: 0;
     margin: 0;
     list-style-type: none;
 }
 
 .nav-grid li {
-    margin-bottom: 15px; /* Increased space between items */
+    margin-bottom: 15px;
 }
 
 .nav-grid li a {
     text-decoration: none;
     color: #333;
-    font-weight: 600; /* Increased font weight for emphasis */
-    transition: color 0.3s ease, background-color 0.3s ease; /* Added background color transition */
-    padding: 12px 15px; /* Adjusted padding for better click area */
-    border-radius: 3px; /* Rounded corners for links */
+    font-weight: 600; 
+    transition: color 0.3s ease, background-color 0.3s ease; 
+    padding: 12px 15px; 
+    border-radius: 3px; 
 }
 
 .nav-grid li a:hover {
-    color: #fff; /* Change text color on hover */
-    background-color: #3498db; /* Background color on hover */
+    color: #fff; 
+    background-color: #3498db;
 }
 
 /* Hamburger menu styles */
 .hamburger {
-    display: flex; /* Show hamburger icon */
+    display: flex; 
     flex-direction: column;
     cursor: pointer;
 }
@@ -156,11 +156,11 @@ nav.active {
     background-color: #333;
     margin: 4px 0;
     transition: 0.4s;
-    box-shadow: 2px 2px 2px #fff; /* Added white shadow */
+    box-shadow: 2px 2px 2px #fff; 
 }
 
 .hamburger:hover div {
-    background-color: #3498db; /* New color on hover */
+    background-color: #3498db; 
 }
 
 /* Active state for hamburger */
@@ -169,7 +169,7 @@ nav.active {
 }
 
 .hamburger.active div:nth-child(2) {
-    opacity: 0; /* Hide the middle line */
+    opacity: 0; 
 }
 
 .hamburger.active div:nth-child(3) {
@@ -178,7 +178,7 @@ nav.active {
 
 /* Show navbar when active */
 nav.active {
-    display: flex; /* Show nav when hamburger is active */
+    display: flex; 
 }
 
 /* Welcome Section Styles */
@@ -232,84 +232,84 @@ a:hover {
 
 /* Personal project styles */
 .personal-project {
-    border: 1px solid #3498db; /* Blue border */
-    padding: 20px; /* Space inside the box */
-    margin: 20px 0; /* Space between boxes */
-    border-radius: 10px; /* Rounded corners */
-    background-color: #f0f8ff; /* Light background color */
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
-    transition: transform 0.3s, box-shadow 0.3s; /* Smooth transition for hover effects */
+    border: 1px solid #3498db;
+    padding: 20px;
+    margin: 20px 0; 
+    border-radius: 10px; 
+    background-color: #f0f8ff;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); 
+    transition: transform 0.3s, box-shadow 0.3s; 
 }
 
 .personal-project:hover {
-    transform: translateY(-5px); /* Lift effect */
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2); /* Deeper shadow on hover */
+    transform: translateY(-5px); 
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2); 
 }
 
 .personal-project h4 {
-    color: #2c3e50; /* Darker color for titles */
-    margin-bottom: 10px; /* Space below titles */
+    color: #2c3e50; 
+    margin-bottom: 10px; 
 }
 
 .personal-project .project-content {
-    display: flex; /* Flexbox for image and text */
-    align-items: center; /* Center vertically */
+    display: flex; 
+    align-items: center;
 }
 
 .personal-project .project-content img {
-    max-width: 100px; /* Limit image size */
-    margin-right: 15px; /* Space between image and text */
-    border-radius: 5px; /* Rounded corners for images */
+    max-width: 100px; 
+    margin-right: 15px;
+    border-radius: 5px;
 }
 
 /* Mobility project and role model styles */
 .mobility-project, .role-model, .intership {
-    border: 1px solid #3498db; /* Blue border */
-    padding: 20px; /* Space inside the box */
-    margin: 20px 0; /* Space between boxes */
-    border-radius: 10px; /* Rounded corners */
-    background-color: #f0f8ff; /* Light background color */
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
-    transition: transform 0.3s, box-shadow 0.3s; /* Smooth transition for hover effects */
+    border: 1px solid #3498db; 
+    padding: 20px; 
+    margin: 20px 0; 
+    border-radius: 10px; 
+    background-color: #f0f8ff; 
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s; 
 }
 
 .mobility-project:hover, .role-model:hover, .intership:hover {
-    transform: translateY(-5px); /* Lift effect */
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2); /* Deeper shadow on hover */
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2); 
 }
 
 .mobility-project h4, .role-model h4, .intership h4 {
-    color: #2c3e50; /* Darker color for titles */
-    margin-bottom: 10px; /* Space below titles */
+    color: #2c3e50;
+    margin-bottom: 10px; 
 }
 
 /* Project content styles */
 .project-content {
-    display: flex; /* Flexbox for image and text */
-    align-items: center; /* Center vertically */
+    display: flex; 
+    align-items: center; 
 }
 
 .project-content img {
-    max-width: 100px; /* Limit image size */
-    margin-right: 15px; /* Space between image and text */
-    border-radius: 5px; /* Rounded corners for images */
+    max-width: 100px; 
+    margin-right: 15px; 
+    border-radius: 5px; 
 }
 
 /* Button styles */
 .button {
     display: inline-block;
     padding: 10px 20px;
-    background-color: #3498db; /* Button color */
+    background-color: #3498db; 
     color: #fff;
     text-decoration: none;
     border-radius: 5px;
     transition: background-color 0.3s ease, transform 0.1s ease-in-out;
-    margin-top: 10px; /* Space above buttons */
+    margin-top: 10px; 
 }
 
 .button:hover {
-    background-color: #2980b9; /* Darker button color on hover */
-    transform: scale(1.05); /* Slightly enlarge button on hover */
+    background-color: #2980b9; 
+    transform: scale(1.05); 
 }
 
 /* Video styles */
@@ -319,9 +319,9 @@ video {
 }
 
 .video-container {
-    display: flex; /* Use flexbox */
-    justify-content: center; /* Center horizontally */
-    margin: 20px 0; /* Add some margin for spacing */
+    display: flex; 
+    justify-content: center;
+    margin: 20px 0; 
 }
 
 /* Button container styles */
@@ -373,12 +373,12 @@ video {
     nav {
         flex-direction: column;
         width: 100%;
-        background-color: #f8f9fa; /* New background color for mobile */
-        padding: 15px; /* Increased padding for better spacing */
-        border: 1px solid #3498db; /* Added border */
-        border-radius: 5px; /* Rounded corners */
-        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Added shadow for depth */
-        display: none; /* Hide nav by default */
+        background-color: #f8f9fa; 
+        padding: 15px; 
+        border: 1px solid #3498db;
+        border-radius: 5px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); 
+        display: none; 
     }
 
     .nav-grid {
@@ -387,7 +387,7 @@ video {
     }
 
     .nav-grid li {
-        margin-bottom: 15px; /* Increased space between items */
+        margin-bottom: 15px;
     }
 
     section {
