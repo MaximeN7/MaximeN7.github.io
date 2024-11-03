@@ -186,6 +186,7 @@ nav.active {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    flex-wrap: wrap;
 }
 
 .welcome-content p {
@@ -417,5 +418,10 @@ video {
     .company-logo {
         max-width: 80px;
         margin-bottom: 10px;
+    }
+
+    .welcome-content {
+        flex-direction: column; /* Stack items vertically */
+        align-items: flex-start; /* Align items to the start */
     }
 }
