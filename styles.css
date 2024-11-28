@@ -2,27 +2,15 @@
 body {
     font-family: Arial, sans-serif;
     line-height: 1.6;
-    color: #333;
+    color: #ccc;
     max-width: 800px;
     margin: 0 auto;
     padding: 20px;
     padding-top: 150px;
-    background:  url('images/background.png');
-    background-size: cover; 
-    background-repeat: no-repeat; 
-    animation: scroll 80s linear infinite; 
+    background: linear-gradient(to bottom, #001f3f, #0074d9); /* Updated background */
     z-index: -1; 
     background-attachment: fixed;
     min-height: 100vh;
-}
-
-@keyframes scroll {
-    0% {
-        background-position: 0 0;
-    }
-    100% {
-        background-position: 0 100%; 
-    }
 }
 
 /* Header styles */
@@ -51,8 +39,8 @@ header {
 header h1 {
     margin: 20px;
     font-size: 24px;
-    color: #464646; 
-    text-shadow: 2px 2px 2px #fff; 
+    color: #ccc; 
+    text-shadow: 2px 2px 2px #111111; 
     transition: color 0.3s ease; 
 }
 
@@ -62,29 +50,29 @@ header h1:hover {
 
 /* Header styles for h1, h2, h3, h4 */
 h1 {
-    color: #2c3e50;
+    color: #e5bd70;
     font-size: 2.5em;
     margin-bottom: 20px;
 }
 
 h2 {
-    color: #2c3e50;
+    color: #e5bd70;
     font-size: 1.8em;
     padding-bottom: 10px;
-    border-bottom: 2px solid #3498db;
+    border-bottom: 2px solid #2980b9;
     margin-bottom: 20px;
     text-transform: uppercase;
     letter-spacing: 1px;
 }
 
 h3 {
-    color: #34495e;
+    color: #d3c9af;
     font-size: 1.3em;
     margin-top: 20px;
 }
 
 h4 {
-    color: #2c3e50;
+    color: #e5bd70;
     font-size: 1.1em;
     margin-top: 15px;
 }
@@ -131,7 +119,7 @@ nav.active {
 
 .nav-grid li a {
     text-decoration: none;
-    color: #333;
+    color: #d9cccc;
     font-weight: 600; 
     transition: color 0.3s ease, background-color 0.3s ease; 
     padding: 12px 15px; 
@@ -153,10 +141,10 @@ nav.active {
 .hamburger div {
     width: 25px;
     height: 3px;
-    background-color: #333;
+    background-color: #ccc;
     margin: 4px 0;
     transition: 0.4s;
-    box-shadow: 2px 2px 2px #fff; 
+    box-shadow: 2px 2px 2px #232323; 
 }
 
 .hamburger:hover div {
@@ -207,7 +195,7 @@ nav.active {
 section {
     margin-bottom: 30px;
     padding: 20px;
-    background-color: rgba(255, 255, 255, 0.8);
+    background-color: rgba(36, 21, 71, 0.8);
     border-radius: 5px;
     box-shadow: 0 2px 5px rgba(0,0,0,0.1);
 }
@@ -223,7 +211,7 @@ li {
 
 /* Link styles */
 a {
-    color: #3498db;
+    color: #2980b9;
     text-decoration: none;
 }
 
@@ -233,11 +221,11 @@ a:hover {
 
 /* Personal project styles */
 .personal-project {
-    border: 1px solid #3498db;
+    border: 1px solid #2980b9;
     padding: 20px;
     margin: 20px 0; 
     border-radius: 10px; 
-    background-color: #f0f8ff;
+    background-color: #041e37;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); 
     transition: transform 0.3s, box-shadow 0.3s; 
 }
@@ -248,7 +236,7 @@ a:hover {
 }
 
 .personal-project h4 {
-    color: #2c3e50; 
+    color: #98a0a8; 
     margin-bottom: 10px; 
 }
 
@@ -265,11 +253,11 @@ a:hover {
 
 /* Mobility project and role model styles */
 .mobility-project, .role-model, .intership {
-    border: 1px solid #3498db; 
+    border: 1px solid #2980b9; 
     padding: 20px; 
     margin: 20px 0; 
     border-radius: 10px; 
-    background-color: #f0f8ff; 
+    background-color: #041e37; 
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s, box-shadow 0.3s; 
 }
@@ -280,7 +268,7 @@ a:hover {
 }
 
 .mobility-project h4, .role-model h4, .intership h4 {
-    color: #2c3e50;
+    color: #7c8186;
     margin-bottom: 10px; 
 }
 
@@ -300,7 +288,7 @@ a:hover {
 .button {
     display: inline-block;
     padding: 10px 20px;
-    background-color: #3498db; 
+    background-color: #2980b9; 
     color: #fff;
     text-decoration: none;
     border-radius: 5px;
