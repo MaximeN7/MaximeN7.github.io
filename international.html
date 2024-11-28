@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <h1>E-Portfolio</h1>
+            <div class="hamburger" id="hamburger">
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+        </div>
+        <nav id="navbar">
+            <ul class="nav-grid">
+                <li><a href="index.html">Welcome</a></li>
+                <li><a href="engineering.html">Engineering Course</a></li>
+                <li><a href="international.html">International Mobility</a></li>
+                <li><a href="engagement.html">Sustainability & Civic Engagement</a></li>
+                <li><a href="activities.html">Sport & Other Activities</a></li>
+                <li><a href="career.html">Career Development</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="international">
+        <h2>International Mobility</h2>
+        <h3>Mobility Projects</h3>
+        <div class="mobility-project">
+            <h4>Internship at Steel Wool Studios</h4>
+            <div class="project-content">
+                <img src="images/SteelWoolLogo.png" alt="Steel Wool Studios Logo" class="company-logo">
+                <p>My first international mobility project consists in doing my last year's Internship
+                    at the game development studio <b>Steel Wool Studios</b> in Oakland, California.
+                </p>
+            </div>
+        </div>
+        <div class="mobility-project">
+            <h4>Internship at Mojang Studios</h4>
+            <div class="project-content">
+                <img src="images/MojangLogo.png" alt="Mojang Studios Logo" class="company-logo">
+                <p>My second international mobility project consists in doing my last year's Internship
+                    at the game development studio <b>Mojang Studios</b> in Stockholm, Sweden.
+                </p>
+            </div>
+        </div>
+        <div class="mobility-project">
+            <h4>Internship at Epic games/Unreal Engine</h4>
+            <div class="project-content">
+                <img src="images/UnrealLogo.png" alt="Unreal Engine Logo" class="company-logo">
+                <p>My third international mobility project would be doing my last year's Internship
+                    at the <b>Epic games</b> company, working on the Unreal Engine game-making Engine in the United States.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <button id="scroll-to-top">↑</button>
+
+    <script src="scroll-to-top.js"></script>
+    <script>
+        // JavaScript to toggle the hamburger menu
+        const hamburger = document.getElementById('hamburger');
+        const navbar = document.getElementById('navbar');
+
+        hamburger.addEventListener('click', () => {
+            hamburger.classList.toggle('active');
+            navbar.classList.toggle('active');
+        });
+    </script>
+</body>
+</html>
