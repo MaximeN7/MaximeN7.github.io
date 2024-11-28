@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <h1>E-Portfolio</h1>
+            <div class="hamburger" id="hamburger">
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+        </div>
+        <nav id="navbar">
+            <ul class="nav-grid">
+                <li><a href="index.html">Welcome</a></li>
+                <li><a href="engineering.html">Engineering Course</a></li>
+                <li><a href="international.html">International Mobility</a></li>
+                <li><a href="engagement.html">Sustainability & Civic Engagement</a></li>
+                <li><a href="activities.html">Sport & Other Activities</a></li>
+                <li><a href="career.html">Career Development</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="career">
+        <h2>Career Development</h2>
+        <h3>CV</h3>
+        <div class="button-container">
+            <a href="files/CV_EN_Maxime_Huet.pdf" class="button animate-click" target="_blank">CV in English</a>
+            <a href="files/CV_FR_Maxime_Huet.pdf" class="button animate-click" target="_blank">CV en Français</a>
+        </div>
+
+        <div class="separator"></div>
+
+        <h3>LinkedIn Profile</h3>
+        <div class="button-container">
+            <a href="https://www.linkedin.com/in/maxime-huet-fren/" class="button animate-click" target="_blank">See my LinkedIn Profile</a>
+        </div>
+
+        <div class="separator"></div>
+
+        <h3>Elevator Pitch Video</h3>
+        <div class="video-container">
+            <video width="640" height="360" controls>
+                <source src="videos/ElevatorPitch.mp4" type="video/mp4">
+                Your browser can't load the video.
+            </video>
+        </div>
+
+        <div class="separator"></div>
+
+        <h3>Role Model</h3>
+        <div class="role-model">
+            <h4>Joran Marcy</h4>
+            <p>Joran Marcy is a former ENAC student that works as a software
+                engineer and technical director at the Numix company. </br>
+            His roles include the creation of new tools and systems for the company as well
+            as the supervision of everything "code-related" and "project-organisation-related".</p>
+        </div>
+        <div class="role-model">
+            <h4>Scott Cawthon</h4>
+            <p>Scott Cawthon is a video game developer that started as an independent developer
+                but managed to bring his vision to reality and now works with several studios for 
+                his games. </br>
+                While not an engineer, his career path in game development aligns with my plans for the future
+                and the way he started as an independent is a source of motivation.
+            </p>
+        </div>
+        <div class="role-model">
+            <h4>Jens Bergensten</h4>
+            <p>Jens Bergensten, more known as Jeb, is the Creative Officer at Mojang Studios.</br>
+                His work on the various Mojang games is one of the things that motivated me the most
+                to get in game development.</p>
+        </div>
+
+        <div class="separator"></div>
+        
+        <h3>Internships</h3>
+        <div class="intership">
+            <h4>Intership and temporary contract at Numix</h4>
+            <p>During my second year in La Prépa des INP I realised a 6 weeks long intership in software development in the 
+                Numix company that led to a temporary contract of 5 weeks to bring my projects to completion.</br>
+                During those 3 months, I worked on an Augmented Reality project where I developed the security system
+                for the devices used in the experience.</p>
+        </div>
+    </section>
+
+    <button id="scroll-to-top">↑</button>
+
+    <script src="scroll-to-top.js"></script>
+    <script>
+        // JavaScript to toggle the hamburger menu
+        const hamburger = document.getElementById('hamburger');
+        const navbar = document.getElementById('navbar');
+
+        hamburger.addEventListener('click', () => {
+            hamburger.classList.toggle('active');
+            navbar.classList.toggle('active');
+        });
+    </script>
+</body>
+</html>

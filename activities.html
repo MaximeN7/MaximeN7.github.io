@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <h1>E-Portfolio</h1>
+            <div class="hamburger" id="hamburger">
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+        </div>
+        <nav id="navbar">
+            <ul class="nav-grid">
+                <li><a href="index.html">Welcome</a></li>
+                <li><a href="engineering.html">Engineering Course</a></li>
+                <li><a href="international.html">International Mobility</a></li>
+                <li><a href="engagement.html">Sustainability & Civic Engagement</a></li>
+                <li><a href="activities.html">Sport & Other Activities</a></li>
+                <li><a href="career.html">Career Development</a></li>
+            </ul>
+        </nav>
+    </header>   
+
+    <section id="activities">
+        <h2>Sport & Other Activities</h2>
+        <p>Outside of class, I do a lot of programming for personal projects.</br>
+            My projects mainly revolve around video game programming and video game creation in general. </br>
+            While my main passion is programming, I still try to work on every aspect of the games I make. </br>
+            Whether it is 3D modeling, Interface design, etc., I try to create the majority of it myself as it expands my skills
+            in the "game-making process".
+        </p>
+    
+        <h3>Personal projects</h3>
+        <div class="personal-project">
+            <h4>Screw Up! - Videogame</h4>
+            <div class="project-content">
+                <img src="images/ScrewUp.png" alt="Screw Up! Logo" class="company-logo">
+                <p><b>Screw Up!</b> is a videogame I developed alongside with a friend using Unreal Engine 4 in 72 hours as a part of Game Jam in 2023.</p>
+            </div>
+            <div class="button-container">
+                <a href="https://cerrad-las-sopas.itch.io/screw-up" class="button animate-click" target="_blank">Game page</a>
+            </div>
+        </div>
+        <div class="personal-project">
+            <h4>Cutout - Videogame</h4>
+            <div class="project-content">
+                <img src="images/CutOut.png" alt="Cutout Logo" class="company-logo">
+                <p><b>Cutout</b> is a videogame I developed alongside with friends using Unreal Engine 4 in 96 hours as a part of Game Jam in 2024.</p>
+            </div>
+            <div class="button-container">
+                <a href="https://cerrad-las-sopas.itch.io/cutout" class="button animate-click" target="_blank">Game page</a>
+            </div>
+        </div>
+        <div class="personal-project">
+            <h4>The Rise Of Hraesvelg - Videogame</h4>
+            <div class="project-content">
+                <img src="images/TROH.png" alt="TROH Logo" class="company-logo">
+                <p><b>The Rise Of Hraesvelg</b> is an Open World videogame that I am currently developing alone in its entirety using Unreal Engine 4.</p>
+            </div>
+        </div>
+    </section>
+
+
+    <button id="scroll-to-top">↑</button>
+
+    <script src="scroll-to-top.js"></script>
+    <script>
+        // JavaScript to toggle the hamburger menu
+        const hamburger = document.getElementById('hamburger');
+        const navbar = document.getElementById('navbar');
+
+        hamburger.addEventListener('click', () => {
+            hamburger.classList.toggle('active');
+            navbar.classList.toggle('active');
+        });
+    </script>
+</body>
+</html>
