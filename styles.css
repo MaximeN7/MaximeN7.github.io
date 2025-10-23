@@ -252,7 +252,7 @@ a:hover {
 }
 
 /* Mobility project and role model styles */
-.mobility-project, .role-model, .intership {
+.mobility-project, .role-model, .internship {
     border: 1px solid #2980b9; 
     padding: 20px; 
     margin: 20px 0; 
@@ -262,12 +262,12 @@ a:hover {
     transition: transform 0.3s, box-shadow 0.3s; 
 }
 
-.mobility-project:hover, .role-model:hover, .intership:hover {
+.mobility-project:hover, .role-model:hover, .internship:hover {
     transform: translateY(-5px);
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2); 
 }
 
-.mobility-project h4, .role-model h4, .intership h4 {
+.mobility-project h4, .role-model h4, .internship h4 {
     color: #7c8186;
     margin-bottom: 10px; 
 }
